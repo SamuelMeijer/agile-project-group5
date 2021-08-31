@@ -2,11 +2,18 @@ import './App.css';
 import About from './components/About/About'; 
 import Header from './components/Header/Header';
 
+// Importing Router
+import {
+  Switch,
+  Route
+} from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <About />
-    </div>
+      <Switch>
+        {/* <Route path='/' component={ Index } exact /> */}
+        {/* <Route path='/about' component={ About } /> */}
+      </Switch>
   );
 }
 

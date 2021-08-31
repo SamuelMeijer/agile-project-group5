@@ -9,7 +9,7 @@ function About() {
                     <h1 className={Styles.bannerh1}>We Were Born To Race</h1>
                 </div>
             </div>
-            
+
 
 
         </div>
