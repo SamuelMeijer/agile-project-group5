@@ -1,10 +1,17 @@
 import './App.css';
 
+// Importing Router
+import {
+  Switch,
+  Route
+} from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+      <Switch>
+        {/* <Route path='/' component={ Index } exact /> */}
+        {/* <Route path='/about' component={ About } /> */}
+      </Switch>
   );
 }
 
