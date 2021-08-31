@@ -6,7 +6,7 @@ function Footer() {
             <div>
                 <h1 className={Styles.h1}>Sidor</h1>
                 <ul className={Styles.text}>
-                    <li>Om oss</li>
+                    <link to ="/About">Om oss</link>
                     <li>Vanliga frågor</li>
                     <li>Kontakt</li>
                 </ul>
