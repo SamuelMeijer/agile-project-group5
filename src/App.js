@@ -1,5 +1,5 @@
 import './App.css';
-import Footer from './components/Footer/Footer'
+import Contact from './components/Contact/Contact'
 
 
 // Importing Router
@@ -16,7 +16,7 @@ function App() {
         {/* <Route path='/about' component={ About } /> */}
       </Switch>
 
-      <Footer />
+      <Contact />
     </div>
   );
 }

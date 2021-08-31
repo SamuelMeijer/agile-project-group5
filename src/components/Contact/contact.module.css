@@ -1,0 +1,40 @@
+.text {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.img {
+    padding-left: 50px;
+    width: 450px;
+    height: 300px;
+}
+
+.box {
+    justify-content: center;
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+}
+
+.wrapper {
+    width: 1440px;
+}
+
+.formwrapper {
+    width: 590px;
+}
+
+.button {
+    height: 40px;
+    width: 128px;
+    border-radius: 5px;
+    background-color: #232323;
+    color: white;
+}
+
+.p {
+    margin: 0;
+}
