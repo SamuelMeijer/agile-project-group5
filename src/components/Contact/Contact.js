@@ -2,8 +2,6 @@ import React from 'react'
 import lokalen from '../../resources/images/lokalen.jpg' 
 import Styles from './contact.module.css'
 
-console.log(lokalen)
-
 function Contact() {
     return(
         <div className={Styles.wrapper}>
@@ -11,7 +9,7 @@ function Contact() {
                 <div>
                     <div><h1>Kontakt</h1></div>
                     <div>
-                        <ul>
+                        <ul className={Styles.info}>
                             <li>Helsingborgsvägen 1, 25227 Helsingborg</li>
                             <li>contact@caferaiders.com</li>
                             <li>042-2933159</li>
@@ -41,7 +39,7 @@ function Contact() {
                 </label>
                 <label>
                 <p className={Styles.p}>Text:</p>
-                <textarea rows="4" cols="25">
+                <textarea rows="6" cols="40" className={Styles.textarea}>
                 </textarea>
                 </label>
                     <input className={Styles.button} type="submit" value="Submit" />

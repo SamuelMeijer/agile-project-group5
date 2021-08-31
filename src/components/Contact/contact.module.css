@@ -1,8 +1,8 @@
-.text {
+/* .text {
     list-style-type: none;
     text-decoration: none;
 }
-
+ */ 
 .img {
     padding-left: 50px;
     width: 450px;
@@ -14,17 +14,24 @@
     display: flex;
 }
 
+.info {
+    font-size: 20px;
+}
+
 .form {
     display: flex;
     flex-flow: column;
 }
 
 .wrapper {
-    width: 1440px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .formwrapper {
-    width: 590px;
+    align-self: center;
+    margin-right: 500px;
 }
 
 .button {
@@ -37,4 +44,8 @@
 
 .p {
     margin: 0;
+}
+
+.textarea {
+    resize: none;
 }
