@@ -1,23 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .wrapper {
   height: 2796px;
   width: 1440px;
   color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.top {
+  width: 1440px;
+  height: 792px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner {
-  width: 1445px;
+  width: 1440px;
   height: 792px;
-}
-
-.bannerImg {
-  width: 1445px;
-  height: 792px;
-}
-
-.bannerBox {
-  height: 94px;
-  width: 628px;
-  background-color: #232323;
+  background-image: url("../../resources/images/riding.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bannerh1 {
@@ -28,4 +39,10 @@
   text-align: center;
   color: #ffffff;
   line-height: 64.45px;
+  height: 94px;
+  width: 628px;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
