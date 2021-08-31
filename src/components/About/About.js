@@ -11,16 +11,18 @@ function About() {
                 </div>
             </header>
 
-            <section className={Styles.middle}>
+            <div className={Styles.middle}>
+                <div className={Styles.mid}>
                 <div className={Styles.gentsDiv}>
                     <img className={Styles.gentsImg} src={gents} alt="Gentlemen" />
                 </div>
                     
-                <div className={Styles.middeText}>
+                <div className={Styles.middleText}>
                     <h2 className={Styles.h2}>About Us</h2>
                     <p className={Styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate eu lectus sapien morbi odio. Scelerisque quis duis facilisis nunc, in augue porttitor. Eleifend pharetra urna pellentesque sed at ultricies sem. Sed odio eu et ut mattis sagittis venenatis sed maecenas.</p>
                 </div>
-            </section>
+                </div>
+            </div>
 
 
 

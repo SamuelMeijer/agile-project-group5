@@ -7,7 +7,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 
 .top {
@@ -58,9 +58,9 @@
 }
 
 .gentsDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .gentsImg {
@@ -69,18 +69,28 @@
 }
 
 .middle {
+  /* width: 1440px; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* max-width: 1440px; */
+}
+
+.mid {
   display: flex;
   width: 1440px;
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
-  max-width: 1440px;
+  /* align-content: center; */
 }
 
 .middleText {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  text-align: left;
+  flex-flow: column;
+  /* align-content: center; */
+  /* flex-direction: row; */
+  /* text-align: left; */
+  padding-left: 20px;
 }
