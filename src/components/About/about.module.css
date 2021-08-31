@@ -5,17 +5,12 @@
 }
 
 .wrapper {
-  height: 2796px;
-  width: 1440px;
-  color: #ffffff;
   display: flex;
-  text-align: center;
   justify-content: center;
+  flex-flow: column wrap;
 }
 
 .top {
-  width: 1440px;
-  height: 792px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +21,13 @@
   height: 792px;
   background-image: url("../../resources/images/riding.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bannerh1 {
+.h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 55px;
@@ -45,4 +41,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.h2 {
+  font-size: 46px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #232323;
+}
+
+.p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #232323;
+}
+
+.gentsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gentsImg {
+  width: 471px;
+  height: 332px;
+}
+
+.middle {
+  display: flex;
+  width: 1440px;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+}
+
+.middleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
 }
