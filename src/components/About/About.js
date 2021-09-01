@@ -107,7 +107,7 @@ function About() {
                             <h3 className={Styles.h3}>Sebastian Fantastian</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Motor ingenjör</p>
+                            <p>Motoringenjör</p>
                             <p>example@email.com</p>
                         </div>
                         <div className={Styles.cardLorem}>

@@ -67,7 +67,6 @@
 }
 
 .middle {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -75,6 +74,7 @@
 .mid {
   display: flex;
   width: 1440px;
+  margin-top: 226px;
 }
 
 .middleText {
@@ -82,7 +82,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-flow: column;
-  padding-left: 20px;
+  margin-left: 99px;
 }
 
 .emph2box {
