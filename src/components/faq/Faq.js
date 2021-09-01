@@ -4,7 +4,6 @@ import Styles from './faq.module.css';
 // Importing useState from react
 import { useState } from 'react';
 
-
 export default function Faq () {
     // Defining state for 'clickedQuestion'
     const [clickedQuestion, setClickedQuestion] = useState(undefined);
@@ -52,13 +51,16 @@ export default function Faq () {
                 { faqQuestions.map( (question) => {
                     return (
                         <li key={ question.id } onClick={() => { setClickedQuestion(question.id) }} className={ Styles.menuItem }>
-                            {/* TODO: Add fontawesome-chevron to question */}
-                            <h2 className={ Styles.menuItemQuestion }>{ question.question }</h2>
+
+                            <div className={ Styles.menuItemQuestionWrapper }>
+                                <h2 className={ Styles.menuItemQuestion }>{ question.question }</h2>
+                                <p className={ (question.id === clickedQuestion ? Styles.menuItemSelected : Styles.menuItemChevron) }>{'>'}</p>
+                            </div>
                             
                             {   question.id === clickedQuestion ?
                                     <p className={ Styles.menuItemAnswer }>{ question.answer }</p>
                                 :
-                                    console.log('No question selected')
+                                    null
                             }
                             
                         </li>
