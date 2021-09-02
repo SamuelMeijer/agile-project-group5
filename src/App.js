@@ -1,4 +1,5 @@
 import './App.css';
+import Index from "./components/Index/Index";
 
 // Importing Router
 import {
@@ -8,10 +9,13 @@ import {
 
 function App() {
   return (
-      <Switch>
-        {/* <Route path='/' component={ Index } exact /> */}
-        {/* <Route path='/about' component={ About } /> */}
-      </Switch>
+      <div>
+        <Index />
+        <Switch>
+            {/* <Route path='/' component={ Index } exact /> */}
+            {/* <Route path='/about' component={ About } /> */}
+        </Switch>
+      </div>
   );
 }
 
