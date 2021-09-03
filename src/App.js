@@ -1,10 +1,12 @@
 import './App.css';
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
 
+import Header from './components/Header/Header';
+import Index from './components/Index/Index';
+import About from './components/About/About';
+import Faq from './components/faq/Faq';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
-import About from './components/About/About'; 
-import Index from "./components/Index/Index";
 
 // Importing Router
 import {
@@ -16,15 +18,16 @@ import Faq from './components/Faq/Faq';
 
 function App() {
   return (
-      <div>
-        <About />
-        <Index />
-        <Contact />
-        <Switch>
-            {/* <Route path='/' component={ Index } exact /> */}
-            {/* <Route path='/about' component={ About } /> */}
-        </Switch>
-      </div>
+    <div>
+      <Header />
+      <Switch>
+        <Route path='/' component={ Index } exact />
+        <Route path='/about' component={ About } />
+        <Route path='/faq' component={ Faq } />
+        <Route path='/contact' component={ Contact } />
+      </Switch>
+      <Footer />
+    </div>
   );
 }
 
