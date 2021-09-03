@@ -7,6 +7,8 @@ import {
   Route
 } from "react-router-dom";
 
+import Faq from './components/Faq/Faq';
+
 function App() {
   return (
       <div>
