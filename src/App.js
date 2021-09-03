@@ -1,4 +1,5 @@
 import './App.css';
+import Index from "./components/Index/Index";
 
 // Importing Router
 import {
@@ -10,15 +11,13 @@ import Faq from './components/Faq/Faq';
 
 function App() {
   return (
-    <div>
-      
-      <Switch>
-        {/* <Route path='/' component={ Index } exact /> */}
-        {/* <Route path='/about' component={ About } /> */}
-      </Switch>
-
-      <Faq />
-    </div>
+      <div>
+        <Index />
+        <Switch>
+            {/* <Route path='/' component={ Index } exact /> */}
+            {/* <Route path='/about' component={ About } /> */}
+        </Switch>
+      </div>
   );
 }
 
