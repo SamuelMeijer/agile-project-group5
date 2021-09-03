@@ -1,6 +1,7 @@
 import './App.css';
+
 import About from './components/About/About'; 
-/* import Header from './components/Header/Header'; */
+import Index from "./components/Index/Index";
 
 // Importing Router
 import {
@@ -8,15 +9,18 @@ import {
   Route
 } from "react-router-dom";
 
+import Faq from './components/Faq/Faq';
+
 function App() {
   return (
-    <div>
-      <About />
-      <Switch>
-        {/* <Route path='/' component={ Index } exact /> */}
-        {/* <Route path='/about' component={ About } /> */}
-      </Switch>
-    </div>
+      <div>
+        <About />
+        <Index />
+        <Switch>
+            {/* <Route path='/' component={ Index } exact /> */}
+            {/* <Route path='/about' component={ About } /> */}
+        </Switch>
+      </div>
   );
 }
 
