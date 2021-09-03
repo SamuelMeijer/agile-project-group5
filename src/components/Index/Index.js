@@ -3,12 +3,11 @@ import Styles from './index.module.css'
 import Bike1 from '../../resources/images/bike1.png';
 import Bike2 from '../../resources/images/bike2.png';
 import Bike3 from '../../resources/images/bike3.png';
-import Styles from './index.module.css';
 
 function Index() {
     return (
-        <div>
-           <div className={Styles.heroContainer}>
+    <div>
+        <div className={Styles.heroContainer}>
             <div className={Styles.heroBanner}>
                 <div className={Styles.heroBannerText}>
                     We have the best bikes
@@ -19,7 +18,8 @@ function Index() {
                     Caferaiders offers the best bikes on the market. We promise you high quality build bikes that you'll love!
                 </h2>
             </div>
-            <button className={Styles.btnStyling}>VIEW BIKES</button>
+        <button className={Styles.btnStyling}>VIEW BIKES</button>
+        </div>
 
         <div id={ Styles.bikeSection }>
             <div>
@@ -27,7 +27,7 @@ function Index() {
                 <section>
                     <article>
                         <header>
-                            <img src={ Bike1 } />
+                            <img src={ Bike1 } alt="Bike" />
                             <h3>89 000 SEK</h3>
                         </header>
                         <h4>BMW F 900 R</h4>
@@ -52,12 +52,12 @@ function Index() {
                             </div>
                         </footer>
                         <div className={ Styles.buyBtnContainer }>
-                            <a href="#">BUY</a>
+                            <span>BUY</span>
                         </div>
                     </article>
                     <article>
                         <header>
-                            <img src={ Bike2 } />
+                            <img src={ Bike2 } alt="Bike"/>
                             <h3>79 000 SEK</h3>
                         </header>
                         <h4>TRIUMPTH BV T1</h4>
@@ -82,12 +82,12 @@ function Index() {
                             </div>
                         </footer>
                         <div className={ Styles.buyBtnContainer }>
-                            <a href="#">BUY</a>
+                            <span>BUY</span>
                         </div>
                     </article>
                     <article>
                         <header>
-                            <img src={ Bike3 } />
+                            <img src={ Bike3 } alt="Bike" />
                             <h3>69 000 SEK</h3>
                         </header>
                         <h4>HARLEY DAVIDSON R5</h4>
@@ -112,7 +112,7 @@ function Index() {
                             </div>
                         </footer>
                         <div className={ Styles.buyBtnContainer }>
-                            <a href="#">BUY</a>
+                            <span>BUY</span>
                         </div>
                     </article>
                 </section>

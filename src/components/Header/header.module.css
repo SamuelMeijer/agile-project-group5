@@ -1,6 +1,6 @@
 
 .headerWrapper{
-    height: 63px;
+    height: 94px;
     padding-top: 35px;
     position: fixed;
     top: 0;
@@ -16,7 +16,7 @@
 
 
 .logo{
-    width: 90px;
+    height: 60px;
     padding-left: 82px;
     margin-top: -15px;
 }
@@ -53,5 +53,5 @@
 }
 
 .changeLang > i{
-    padding-top: 3px;
+    padding-top: 6px;
 }

@@ -33,7 +33,7 @@ function Contact() {
                     <select>
                         <option value="grapefruit">Frågor om produkt</option>
                         <option value="lime">Feedback</option>
-                        <option selected value="coconut">Klagomål</option>
+                        <option defaultValue value="coconut">Klagomål</option>
                         <option value="mango">Sök jobb hos oss</option>
                     </select>
                 </label>

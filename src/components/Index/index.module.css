@@ -1,14 +1,17 @@
 .heroContainer{
-    height: 600px;
+    height: 900px;
+    width: 100%;
     background : url('../../resources/images/hero.jpg') no-repeat;
+    background-size: cover;
     padding-top: 250px;
     padding-left: 90px;
+    margin: 94px auto 0 auto;
 }
 
 .heroBanner{
     background-color: #232323;
     height: 88px;
-    width: 578px;
+    width: 654px;
     padding: 0 30px;
 }
 
@@ -46,8 +49,9 @@
     cursor: pointer;
 }
 
-.btnStyling:hover{
+.btnStyling:hover, .buyBtnContainer > span:hover {
     background-color: rgb(66, 66, 66);
+}
 
 #bikeSection {
     padding: 100px 50px
@@ -112,7 +116,7 @@
     justify-content: center;
 }
 
-.buyBtnContainer > a {
+.buyBtnContainer > span {
     margin: 30px 0 10px 0;
     display: flex;
     justify-content: center;
@@ -124,4 +128,5 @@
     width: 120px;
     height: 50px;
     border-radius: 5px;
+    cursor:pointer;
 }

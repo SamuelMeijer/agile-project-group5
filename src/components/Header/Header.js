@@ -18,7 +18,7 @@ function Header() {
                     </nav>
                     <div className={Styles.changeLang}>
                         <p className={Styles.langHead}>SV</p>
-                        <i class="fas fa-chevron-down"></i>
+                        <i className={`fas fa-chevron-down`}></i>
                     </div>
                 </div>
             </div>

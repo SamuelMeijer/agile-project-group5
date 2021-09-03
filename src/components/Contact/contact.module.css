@@ -10,12 +10,14 @@
 }
 
 .box {
+    margin-top: 120px;
     justify-content: center;
     display: flex;
 }
 
 .info {
     font-size: 20px;
+    list-style: none;
 }
 
 .form {
@@ -24,6 +26,9 @@
 }
 
 .wrapper {
+    margin-top: 94px;
+    margin-bottom: 69px;
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -47,5 +52,14 @@
 }
 
 .textarea {
+    border: 1px solid #000;
     resize: none;
+}
+
+label {
+    padding: 10px 0;
+}
+
+label > input {
+    border-bottom: 1px solid #000;
 }
