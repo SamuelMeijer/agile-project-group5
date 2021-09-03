@@ -1,4 +1,7 @@
 import './App.css';
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+
 
 import About from './components/About/About'; 
 import Index from "./components/Index/Index";
@@ -16,6 +19,7 @@ function App() {
       <div>
         <About />
         <Index />
+        <Contact />
         <Switch>
             {/* <Route path='/' component={ Index } exact /> */}
             {/* <Route path='/about' component={ About } /> */}
