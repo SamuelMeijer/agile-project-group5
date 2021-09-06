@@ -1,19 +1,33 @@
 import Styles from './footer.module.css'
 import { Link } from 'react-router-dom'
 
+import { useTranslation, Trans } from 'react-i18next';
+
 function Footer() {
+    const { t, i18n } = useTranslation();
+
     return(
         <div className={Styles.Box}>
             <div>
-                <h1 className={Styles.h1}>Sidor</h1>
+                <h1 className={Styles.h1}>
+                    <Trans i18nKey= "footer.pages"></Trans> 
+                </h1>
                 <ul className={Styles.text}>
-                    <li><Link to ="/About" className={Styles.text}>Om oss</Link></li>
-                    <li><Link to ="/faq" className={Styles.text}>Vanliga frågor</Link></li>
-                    <li><Link to ="/Contact" className={Styles.text}>Kontakt</Link></li>
+                    <li><Link to ="/About" className={Styles.text}>
+                        <Trans i18nKey= "footer.about"></Trans> 
+                    </Link></li>
+                    <li><Link to ="/faq" className={Styles.text}>
+                        <Trans i18nKey= "footer.faq"></Trans> 
+                    </Link></li>
+                    <li><Link to ="/Contact" className={Styles.text}>
+                        <Trans i18nKey= "footer.contact"></Trans> 
+                    </Link></li>
                 </ul>
             </div>
             <div>
-                <h5 className={Styles.h5}>© 2021 Caferaider SWE, inc. All Rights Reserved</h5>
+                <h5 className={Styles.h5}>
+                    <Trans i18nKey= "footer.rights"></Trans>     
+                </h5>
             </div>
         </div>
     )

@@ -4,7 +4,12 @@ import Styles from './faq.module.css';
 // Importing useState from react
 import { useState } from 'react';
 
+import { useTranslation, Trans } from 'react-i18next';
+
+
 export default function Faq () {
+    const { t, i18n } = useTranslation();
+
     // Defining state for 'clickedQuestion'
     const [clickedQuestion, setClickedQuestion] = useState(undefined);
 

@@ -3,12 +3,18 @@ import Styles from './about.module.css';
 import gents from '../../resources/images/distinguished-gents-ride.jpg';
 import profile from '../../resources/images/profile.jpg';
 
+import { useTranslation, Trans } from 'react-i18next';
+
 function About() {
+    const { t, i18n } = useTranslation();
+
     return(
         <div className={Styles.wrapper}>
             <header className={Styles.top}>
                 <div className={Styles.banner}>
-                    <h1 className={Styles.h1}>We Were Born To Race</h1>
+                    <h1 className={Styles.h1}>
+                        <Trans i18nKey= "about.title"></Trans> 
+                    </h1>
                 </div>
             </header>
 
@@ -19,14 +25,20 @@ function About() {
                     </div>
                         
                     <div className={Styles.middleText}>
-                        <h2 className={Styles.h2}>About Us</h2>
-                        <p className={Styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate eu lectus sapien morbi odio. Scelerisque quis duis facilisis nunc, in augue porttitor. Eleifend pharetra urna pellentesque sed at ultricies sem. Sed odio eu et ut mattis sagittis venenatis sed maecenas.</p>
+                        <h2 className={Styles.h2}>
+                            <Trans i18nKey= "about.about"></Trans> 
+                        </h2>
+                        <p className={Styles.p}>
+                            <Trans i18nKey= "about.desc"></Trans> 
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div className={Styles.emph2box}>
-                <h2 className={Styles.h2}>Employees</h2>
+                <h2 className={Styles.h2}>
+                    <Trans i18nKey= "about.employees"></Trans> 
+                </h2>
             </div>
 
             <div className={Styles.boxWrapper}>

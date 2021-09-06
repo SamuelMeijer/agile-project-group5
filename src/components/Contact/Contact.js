@@ -2,12 +2,20 @@ import React from 'react'
 import lokalen from '../../resources/images/lokalen.jpg' 
 import Styles from './contact.module.css'
 
+import { useTranslation, Trans } from 'react-i18next';
+
 function Contact() {
+    const { t, i18n } = useTranslation();
+
     return(
         <div className={Styles.wrapper}>
             <div className={Styles.box}>
                 <div>
-                    <div><h1>Kontakt</h1></div>
+                    <div>
+                        <h1>
+                            <Trans i18nKey= "contact.contact">Hem</Trans> 
+                        </h1>
+                    </div>
                     <div>
                         <ul className={Styles.info}>
                             <li>Helsingborgsvägen 1, 25227 Helsingborg</li>
@@ -21,7 +29,9 @@ function Contact() {
             <div className={Styles.formwrapper}>
             <form className={Styles.form}>
                 <label>
-                    <p className={Styles.p}>Namn:</p>
+                    <p className={Styles.p}>
+                        <Trans i18nKey= "contact.name"></Trans> 
+                    </p>
                     <input type="text" name="name" />
                 </label>
                 <label>
@@ -29,7 +39,9 @@ function Contact() {
                     <input type="text" name="email" />
                 </label>
                 <label>
-                <p className={Styles.p}>Ämne:</p>
+                <p className={Styles.p}>
+                    <Trans i18nKey= "contact.subject"></Trans> 
+                </p>
                     <select>
                         <option value="grapefruit">Frågor om produkt</option>
                         <option value="lime">Feedback</option>
