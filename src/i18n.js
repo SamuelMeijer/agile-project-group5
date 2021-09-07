@@ -20,8 +20,9 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                 header: {
                     firstLink: 'Home',
                     secondLink: 'About',
-                    thirdLink: 'FAQ',
-                    fourthLink: 'Contact',
+                    thirdLink: 'News',
+                    fourthLink: 'FAQ',
+                    fifthLink: 'Contact',
                     title: 'We got the best bikes',
                     firstDesc: 'Caferaiders offers the best bikes on the market. We promise you high quality build bikes that you will love!',
                     btn: 'SEE BIKES',
@@ -45,6 +46,76 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     about: 'About Us',
                     desc: 'Motorcycles are our passion. Together we have more than 30 years experience from selling, servicing and riding motorcyckels. We offer the best motorcycles at the lowest prices and will always ne there for our customers.',
                     employees: 'Employees',
+                },
+                news: {
+                    title: 'Title hejhejejehe',
+                    text: 'Textasdasdd  asdasds',
+                    content: [
+                        {
+                            id: 0,
+                            title: 'HEJ1', 
+                            date: '2000-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'News', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 1,
+                            title: 'HEJ2', 
+                            date: '2001-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'Article', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 2,
+                            title: 'HEJ3', 
+                            date: '2002-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'News', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 3,
+                            title: 'HEJ4', 
+                            date: '2003-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'Article', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 4,
+                            title: 'HEJ5', 
+                            date: '2004-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'News', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 5,
+                            title: 'HEJ6', 
+                            date: '2005-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'Article', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 6,
+                            title: 'HEJ7', 
+                            date: '2006-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'News', 
+                            content: 'MASSA JÄVA TEXT'
+                        },
+                        {
+                            id: 7,
+                            title: 'HEJ8', 
+                            date: '2007-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'Article', 
+                            content: 'MASSA JÄVA TEXT'
+                        }
+                    ]
                 },
                 faq: {
                     description: 'Here is a collection of the most frequently asked questions',
@@ -96,9 +167,10 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
             translation: {
                 header: {
                     firstLink: 'Hem',
-                    secondLink: 'Om oss',
-                    thirdLink: 'Vanliga frågor',
-                    fourthLink: 'Kontakt',
+                    secondLink: 'Om Oss',
+                    thirdLink: 'Nyheter',
+                    fourthLink: 'FAQ',
+                    fifthLink: 'Kontakt',
                     title: 'Vi har de bästa MC:n',
                     firstDesc: 'Caferaiders erbjuder de bästa cyklarna på marknaden. Vi lovar dig cyklar av hög kvalitet som du kommer att älska!',
                     btn: 'SE MC',
@@ -122,6 +194,19 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     about: 'Om Oss',
                     desc: 'Motorcyklar är våran passion. Tillsammans har vi mer än 30 års erfarenhet från försäljning, service och körande av motorcyklar. Vi erbjuder de bästa motorcycklarna till de lägsta priserna och kommer alltid att finnas där för våra kunder.',
                     employees: 'Anställda'
+                },
+                news: {
+                    title: 'Title',
+                    text: 'Text',
+                    content: [
+                        {
+                            title: 'HEJ', 
+                            date: '2020-09-30', 
+                            author: 'Kalle Ost', 
+                            category: 'Article/News', 
+                            content: 'MASSA JÄVA TEXT'
+                        }
+                    ]
                 },
                 faq: {
                     description: 'Här har vi samlat några av de vanligaste frågorna',
