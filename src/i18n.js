@@ -53,7 +53,10 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     contact: 'Contact',
                     name: 'Name:',
                     subject: 'Subject:',
-                    question: 'Question regarding product'
+                    question: 'Question regarding product',
+                    complaints: 'Complaints',
+                    jobs: 'Search for a job',
+                    submit: 'Send'
                 }
             }
         },
@@ -85,7 +88,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                 about: {
                     title: 'Födda till att köra',
                     about: 'Om Oss',
-                    desc: 'TEXT KMR SNART',
+                    desc: 'Motorcyklar är våran passion. Tillsammans har vi mer än 30 års erfarenhet från försäljning, service och körande av motorcyklar. Vi erbjuder de bästa motorcycklarna till de lägsta priserna och kommer alltid att finnas där för våra kunder.',
                     employees: 'Anställda'
                 },
                 faq: {
@@ -95,7 +98,11 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     contact: 'Kontakt',
                     name: 'Namn:',
                     subject: 'Ämne:',
-                    question: 'Frågor om produkt'
+                    question: 'Frågor om produkt',
+                    complaints: 'Klagomål',
+                    jobs: 'Sök jobb hos oss',
+                    submit: 'Skicka'
+
                 }
             }
         }

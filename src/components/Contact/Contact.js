@@ -43,10 +43,16 @@ function Contact() {
                     <Trans i18nKey= "contact.subject"></Trans> 
                 </p>
                     <select>
-                        <option value="grapefruit">Frågor om produkt</option>
+                        <option value="grapefruit">
+                            {t('contact', { returnObjects: true })['question']}
+                        </option>
                         <option value="lime">Feedback</option>
-                        <option defaultValue value="coconut">Klagomål</option>
-                        <option value="mango">Sök jobb hos oss</option>
+                        <option defaultValue value="coconut">
+                            {t('contact', { returnObjects: true })['complaints']}
+                        </option>
+                        <option value="mango">
+                            {t('contact', { returnObjects: true })['jobs']}
+                        </option>
                     </select>
                 </label>
                 <label>
@@ -54,7 +60,7 @@ function Contact() {
                 <textarea rows="6" cols="40" className={Styles.textarea}>
                 </textarea>
                 </label>
-                    <input className={Styles.button} type="submit" value="Submit" />
+                    <input className={Styles.button} type="submit" value={t('contact', {returnObjects: true})['submit']} />
                 </form>
             </div>
         </div>
