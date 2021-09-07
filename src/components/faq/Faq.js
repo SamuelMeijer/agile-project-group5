@@ -17,10 +17,12 @@ export default function Faq () {
     return (
         <section id={ Styles.faqWrapper }>
             <h1 className={ Styles.title }>FAQ</h1>
-            <p className={ Styles.description }>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius consequatur, odio quia laboriosam obcaecati ut architecto alias, ullam quibusdam eveniet illo et quo rerum.</p>
+            <p className={ Styles.description }>
+                <Trans i18nKey="faq.description"></Trans> 
+            </p>
 
             <ul className={ Styles.menu }>
-                { t('faq', { returnObjects: true }).map( (question) => {
+                { t('faq', { returnObjects: true })['questions'].map( (question) => {
                     return (
                         <li key={ question.id } onClick={() => { setClickedQuestion(question.id) }} className={ Styles.menuItem }>
 

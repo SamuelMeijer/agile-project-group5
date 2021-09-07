@@ -46,38 +46,41 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     desc: 'Motorcycles are our passion. Together we have more than 30 years experience from selling, servicing and riding motorcyckels. We offer the best motorcycles at the lowest prices and will always ne there for our customers.',
                     employees: 'Employees',
                 },
-                faq: [
-                    {
-                        id: 0,
-                        question: 'Måste jag ha motorcykelkörkort för att köpa? - ENGLISH',
-                        answer: 'Answer 1: Japp!'
-                    },
-                    {
-                        id: 1,
-                        question: 'Vad säljer ni för motorcyklar?',
-                        answer: 'Answer 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta reprehenderit sunt eum quidem deserunt porro. '
-                    },
-                    {
-                        id: 2,
-                        question: 'Hur lång tid tar det att få en motorcykel?',
-                        answer: 'Answer 3: Lorem ipsum dolor sit amet.  '
-                    },
-                    {
-                        id: 3,
-                        question: 'Vad kostar en motorcykel?',
-                        answer: 'Answer 4: Lorem ipsum dolor sit, amet consectetur adipisicing elit. '
-                    },
-                    {
-                        id: 4,
-                        question: 'Hur kan man kontakta er?',
-                        answer: 'Answer 5: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rerum consequuntur ratione eaque minus accusantium nisi velit. '
-                    },
-                    {
-                        id: 5,
-                        question: 'Vart kan man hitta er?',
-                        answer: 'Answer 6 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quasi repudiandae veniam sed tempore. '
-                    },
-            ],
+                faq: {
+                    description: 'Here is a collection of the most frequently asked questions',
+                    questions: [
+                        {
+                            id: 0,
+                            question: 'Am I required to have a motorcycle license if I want to buy a motorcycle?',
+                            answer: 'No you do not need a motorcycle license to buy a motorcycle, just to ride it'
+                        },
+                        {
+                            id: 1,
+                            question: 'What kind of motorcycles are you selling?',
+                            answer: 'We sell three different models of motorcycles: BMW F 900R, Triumphth BV T1 and Harley Davidson R5'
+                        },
+                        {
+                            id: 2,
+                            question: 'How long does it take to get a motorcycle?',
+                            answer: 'Normal delivery time is three to five weeks'
+                        },
+                        {
+                            id: 3,
+                            question: 'What does a motorcycle cost?',
+                            answer: 'Our motorcycles cost between 69000 - 89000SEK'
+                        },
+                        {
+                            id: 4,
+                            question: 'How can I contact you?',
+                            answer: 'You can always contact us on telephone 042-2933159 during the day, otherwise you can send an email to contact@caferaiders.com'
+                        },
+                        {
+                            id: 5,
+                            question: 'Where can I find you?',
+                            answer: 'You can find us at Helsingborgsvägen 1, 25227 Helsingborg'
+                        },
+                    ]
+                },
                 contact: {
                     contact: 'Contact',
                     name: 'Name:',
@@ -120,38 +123,41 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     desc: 'Motorcyklar är våran passion. Tillsammans har vi mer än 30 års erfarenhet från försäljning, service och körande av motorcyklar. Vi erbjuder de bästa motorcycklarna till de lägsta priserna och kommer alltid att finnas där för våra kunder.',
                     employees: 'Anställda'
                 },
-                faq: [
-                    {
-                        id: 0,
-                        question: 'Måste jag ha motorcykelkörkort för att köpa?',
-                        answer: 'Answer 1: Japp!'
-                    },
-                    {
-                        id: 1,
-                        question: 'Vad säljer ni för motorcyklar?',
-                        answer: 'Answer 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta reprehenderit sunt eum quidem deserunt porro. '
-                    },
-                    {
-                        id: 2,
-                        question: 'Hur lång tid tar det att få en motorcykel?',
-                        answer: 'Answer 3: Lorem ipsum dolor sit amet.  '
-                    },
-                    {
-                        id: 3,
-                        question: 'Vad kostar en motorcykel?',
-                        answer: 'Answer 4: Lorem ipsum dolor sit, amet consectetur adipisicing elit. '
-                    },
-                    {
-                        id: 4,
-                        question: 'Hur kan man kontakta er?',
-                        answer: 'Answer 5: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rerum consequuntur ratione eaque minus accusantium nisi velit. '
-                    },
-                    {
-                        id: 5,
-                        question: 'Vart kan man hitta er?',
-                        answer: 'Answer 6 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quasi repudiandae veniam sed tempore. '
-                    },
-            ],
+                faq: {
+                    description: 'Här har vi samlat några av de vanligaste frågorna',
+                    questions: [
+                        {
+                            id: 0,
+                            question: 'Måste jag ha motorcykelkörkort för att köpa?',
+                            answer: 'Nej du behöver inte ha motorcykelkörkort för att få köpa en motorcykel, enbart för att få köra den'
+                        },
+                        {
+                            id: 1,
+                            question: 'Vad säljer ni för motorcyklar?',
+                            answer: 'Vi säljer tre olika modeller av motorcyklar: BMW F 900R, Triumphth BV T1 och Harley Davidson R5'
+                        },
+                        {
+                            id: 2,
+                            question: 'Hur lång tid tar det att få en motorcykel?',
+                            answer: 'Normal leveranstid är tre till fem veckor'
+                        },
+                        {
+                            id: 3,
+                            question: 'Vad kostar en motorcykel?',
+                            answer: 'Våra motorcyklar kostar mellan 69000 - 89000SEK'
+                        },
+                        {
+                            id: 4,
+                            question: 'Hur kan man kontakta er?',
+                            answer: 'Man kan alltid kontaka oss på telefon 042-2933159 under dagtid, annars kan man skicka ett mail till contact@caferaiders.com'
+                        },
+                        {
+                            id: 5,
+                            question: 'Vart kan man hitta er?',
+                            answer: 'Man hittar oss på Helsingborgsvägen 1, 25227 Helsingborg'
+                        },
+                    ]
+                },
                 contact: {
                     contact: 'Kontakt',
                     name: 'Namn:',
