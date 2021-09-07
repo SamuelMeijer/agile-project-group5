@@ -26,11 +26,14 @@ function Header() {
                         <NavLink exact to='about' activeStyle={{fontWeight: "bold"}}>
                             <Trans i18nKey= "header.secondLink">Om oss</Trans> 
                         </NavLink>
+                        <NavLink exact to='news' activeStyle={{fontWeight: "bold"}}>
+                            <Trans i18nKey= "header.thirdLink">Nyheter</Trans> 
+                        </NavLink>
                         <NavLink exact to='faq' activeStyle={{fontWeight: "bold"}}>
-                            <Trans i18nKey= "header.thirdLink">Vanliga frågor</Trans> 
+                            <Trans i18nKey= "header.fourthLink">Vanliga frågor</Trans> 
                         </NavLink>
                         <NavLink exact to='contact' activeStyle={{fontWeight: "bold"}}>
-                            <Trans i18nKey= "header.fourthLink">Kontakt</Trans> 
+                            <Trans i18nKey= "header.fifthLink">Kontakt</Trans> 
                         </NavLink>
                     </nav>
                     <div className={Styles.changeLang}>
