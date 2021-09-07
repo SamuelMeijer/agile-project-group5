@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Faq from './components/Faq/Faq';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import News from './components/News/News';
 
 
 // Importing Router
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route path='/' component={ Index } exact />
         <Route path='/about' component={ About } />
+        <Route path='/news' component={ News } />
         <Route path='/faq' component={ Faq } />
         <Route path='/contact' component={ Contact } />
       </Switch>
