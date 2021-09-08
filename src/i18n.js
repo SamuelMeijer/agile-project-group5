@@ -48,8 +48,8 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     employees: 'Employees',
                 },
                 news: {
-                    title: 'Title hejhejejehe',
-                    text: 'Textasdasdd  asdasds',
+                    title: 'News and articles',
+                    text: 'Here you will find news and articles',
                     content: [
                         {
                             id: 0,
@@ -196,8 +196,8 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     employees: 'Anställda'
                 },
                 news: {
-                    title: 'Title',
-                    text: 'Text',
+                    title: 'Nyheter och artiklar',
+                    text: 'Här hittar du nyheter och artiklar',
                     content: [
                         {
                             id: 0,
