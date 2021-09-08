@@ -115,7 +115,12 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             category: 'Article', 
                             content: 'YOU WONT BELIVE THIS NEW BIKE'
                         }
-                    ]
+                    ],
+                    all: 'All',
+                    news: 'News',
+                    article: 'Articles',
+                    newest: 'Newest',
+                    oldest: 'Oldest'
                 },
                 faq: {
                     description: 'Here is a collection of the most frequently asked questions',
@@ -204,7 +209,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Kalle ankas motorcyklar', 
                             date: '2000-03-25', 
                             author: 'Kalle Ost', 
-                            category: 'News', 
+                            category: 'Nyhet', 
                             content: 'Kalle ankas motorcyklar'
                         },
                         {
@@ -212,7 +217,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Framtidens motorcyklar', 
                             date: '2001-04-20', 
                             author: 'Iqrah Small', 
-                            category: 'Article', 
+                            category: 'Artikel', 
                             content: 'Framtidens motorcyklar'
                         },
                         {
@@ -220,7 +225,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Denna nya motorn är grym', 
                             date: '2002-01-10', 
                             author: 'Mara Molloy', 
-                            category: 'News', 
+                            category: 'Nyhet', 
                             content: 'Denna nya motorn är grym'
                         },
                         {
@@ -228,7 +233,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Hur du börjar köra', 
                             date: '2003-11-22', 
                             author: 'Muhammed Alfaro', 
-                            category: 'Article', 
+                            category: 'Artikel', 
                             content: 'Hur du börjar köra'
                         },
                         {
@@ -236,7 +241,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Top 10 motorcyklar detta året', 
                             date: '2004-12-30', 
                             author: 'Jethro Olsen', 
-                            category: 'News', 
+                            category: 'Nyhet', 
                             content: 'Top 10 motorcyklar detta året'
                         },
                         {
@@ -244,7 +249,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Hur du kör', 
                             date: '2005-03-03', 
                             author: 'Cain Keith', 
-                            category: 'Article', 
+                            category: 'Artikel', 
                             content: 'Hur du kör'
                         },
                         {
@@ -252,7 +257,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'Ny mega motorcykel gjord', 
                             date: '2006-09-30', 
                             author: 'Paul Dunne', 
-                            category: 'News', 
+                            category: 'Nyhet', 
                             content: 'Ny mega motorcykel gjord'
                         },
                         {
@@ -260,10 +265,15 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                             title: 'DU KOMMER ALDRIG TRO DENNA NYA MOTORCYKELN', 
                             date: '2007-09-07', 
                             author: 'Rhiana Ballard', 
-                            category: 'Article', 
+                            category: 'Artikel', 
                             content: 'DU KOMMER ALDRIG TRO DENNA NYA MOTORCYKELN'
                         }
-                    ]
+                    ],
+                    all: 'Alla',
+                    news: 'Nyheter',
+                    article: 'Artiklar',
+                    newest: 'Nyast',
+                    oldest: 'Äldst'
                 },
                 faq: {
                     description: 'Här har vi samlat några av de vanligaste frågorna',

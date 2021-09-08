@@ -7,12 +7,12 @@ import { useTranslation, Trans } from 'react-i18next';
 function News() {
     const { t, i18n } = useTranslation();
 
-    // Defining state for 'clickedQuestion'
     const [content, setContent] = useState([]);
     const [filteredContent, setFilteredContent] = useState([]);
     const [categoryFilter, setCategoryFilter] = useState('all');
     const [dateFilter, setDateFilter] = useState('newest');
 
+    // TODO: Behåll filter vid språkbyte
     if (dateFilter === 'newest') {
         filteredContent.sort(decending)
     } else {
@@ -23,10 +23,10 @@ function News() {
         setCategoryFilter(event.target.value)
 
         if (event.target.value === 'news') {
-            let newArr = content.filter(element => element.category === 'News');
+            let newArr = content.filter(element => element.category === 'News' || element.category === 'Nyhet');
             setFilteredContent(newArr)
         } else if (event.target.value === 'article') {
-            let newArr = content.filter(element => element.category === 'Article');
+            let newArr = content.filter(element => element.category === 'Article' || element.category === 'Artikel');
             setFilteredContent(newArr)
         } else {
             setFilteredContent(content);
@@ -50,7 +50,7 @@ function News() {
 
         setContent(arr);
         setFilteredContent(arr);
-    }, []);
+    }, [i18n.language]);
 
     return (
         <section id={ Styles.newsWrapper }>
@@ -64,22 +64,22 @@ function News() {
 
             <select onChange={ handleCategoryChange }>
                 <option defaultValue value="all">
-                        Alla
+                    {t('news', { returnObjects: true })['all']}
                 </option>
                 <option value="news">
-                        News
+                    {t('news', { returnObjects: true })['news']}
                 </option>
                 <option value="article">
-                        Article
+                    {t('news', { returnObjects: true })['article']}
                 </option>
             </select>
             
             <select onChange={ handleDateChange }>
                 <option defaultValue value="newest">
-                        Nyast
+                    {t('news', { returnObjects: true })['newest']} 
                 </option>
                 <option value="oldest">
-                        Äldst
+                    {t('news', { returnObjects: true })['oldest']}
                 </option>
             </select>
 
