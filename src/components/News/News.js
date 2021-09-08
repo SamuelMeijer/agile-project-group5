@@ -54,43 +54,47 @@ function News() {
 
     return (
         <section id={ Styles.newsWrapper }>
-            <h1>
-                <Trans i18nKey="news.title"></Trans>
-            </h1>
+            <div className={Styles.newsBanner}>
+                <h1 className={Styles.newsTitle}>
+                    <Trans i18nKey="news.title"></Trans>
+                </h1>
+            </div>
             
-            <p>
+            <p className={Styles.newsText}>
                 <Trans i18nKey="news.text"></Trans>
             </p>
 
-            <select onChange={ handleCategoryChange }>
-                <option defaultValue value="all">
-                    {t('news', { returnObjects: true })['all']}
-                </option>
-                <option value="news">
-                    {t('news', { returnObjects: true })['news']}
-                </option>
-                <option value="article">
-                    {t('news', { returnObjects: true })['article']}
-                </option>
-            </select>
-            
-            <select onChange={ handleDateChange }>
-                <option defaultValue value="newest">
-                    {t('news', { returnObjects: true })['newest']} 
-                </option>
-                <option value="oldest">
-                    {t('news', { returnObjects: true })['oldest']}
-                </option>
-            </select>
+            <div className={Styles.selectContainer}>
+                <select className={Styles.selectBox1} onChange={ handleCategoryChange }>
+                    <option defaultValue value="all">
+                        {t('news', { returnObjects: true })['all']}
+                    </option>
+                    <option value="news">
+                        {t('news', { returnObjects: true })['news']}
+                    </option>
+                    <option value="article">
+                        {t('news', { returnObjects: true })['article']}
+                    </option>
+                </select>
+                
+                <select className={Styles.selectBox2} onChange={ handleDateChange }>
+                    <option defaultValue value="newest">
+                        {t('news', { returnObjects: true })['newest']} 
+                    </option>
+                    <option value="oldest">
+                        {t('news', { returnObjects: true })['oldest']}
+                    </option>
+                </select>
+            </div>
 
             <ul className={ Styles.menu }>
                 
                 {   filteredContent.map( (content) => {
                     return (
-                        <li key={ content.id }>
-                            <h3>{content.title}</h3>
-                            <p>{content.date}</p>
-                            <p>{content.category}</p>
+                        <li className={Styles.li} key={content.id}>
+                            <h3 className={Styles.liTitle}>{content.title}</h3>
+                            <p className={Styles.liDate}>{content.date}</p>
+                            <p className={Styles.liCategory}>{content.category}</p>
                             <p>{content.author}</p>                         
                         </li>
                     )
