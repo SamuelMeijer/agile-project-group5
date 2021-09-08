@@ -53,67 +53,67 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     content: [
                         {
                             id: 0,
-                            title: 'HEJ1', 
-                            date: '2000-09-30', 
+                            title: 'Donald ducks bikes', 
+                            date: '2000-03-25', 
                             author: 'Kalle Ost', 
                             category: 'News', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'Donald ducks bikes'
                         },
                         {
                             id: 1,
-                            title: 'HEJ2', 
-                            date: '2001-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'Future of bikes', 
+                            date: '2001-04-20', 
+                            author: 'Iqrah Small', 
                             category: 'Article', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'Future of bikes'
                         },
                         {
                             id: 2,
-                            title: 'HEJ3', 
-                            date: '2002-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'This new motor is awesome', 
+                            date: '2002-01-10', 
+                            author: 'Mara Molloy', 
                             category: 'News', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'This new motor is awesome'
                         },
                         {
                             id: 3,
-                            title: 'HEJ4', 
-                            date: '2003-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'How to start riding', 
+                            date: '2003-11-22', 
+                            author: 'Muhammed Alfaro', 
                             category: 'Article', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'How to start riding'
                         },
                         {
                             id: 4,
-                            title: 'HEJ5', 
-                            date: '2004-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'Top 10 bikes this year', 
+                            date: '2004-12-30', 
+                            author: 'Jethro Olsen', 
                             category: 'News', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'Top 10 bikes this year'
                         },
                         {
                             id: 5,
-                            title: 'HEJ6', 
-                            date: '2005-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'How to ride a bike', 
+                            date: '2005-03-03', 
+                            author: 'Cain Keith', 
                             category: 'Article', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'How to ride a bike'
                         },
                         {
                             id: 6,
-                            title: 'HEJ7', 
+                            title: 'New mega bike made', 
                             date: '2006-09-30', 
-                            author: 'Kalle Ost', 
+                            author: 'Paul Dunne', 
                             category: 'News', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'New mega bike made'
                         },
                         {
                             id: 7,
-                            title: 'HEJ8', 
-                            date: '2007-09-30', 
-                            author: 'Kalle Ost', 
+                            title: 'YOU WONT BELIVE THIS NEW BIKE', 
+                            date: '2007-09-07', 
+                            author: 'Rhiana Ballard', 
                             category: 'Article', 
-                            content: 'MASSA JÄVA TEXT'
+                            content: 'YOU WONT BELIVE THIS NEW BIKE'
                         }
                     ]
                 },
@@ -200,11 +200,68 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     text: 'Text',
                     content: [
                         {
-                            title: 'HEJ', 
-                            date: '2020-09-30', 
+                            id: 0,
+                            title: 'Kalle ankas motorcyklar', 
+                            date: '2000-03-25', 
                             author: 'Kalle Ost', 
-                            category: 'Article/News', 
-                            content: 'MASSA JÄVA TEXT'
+                            category: 'News', 
+                            content: 'Kalle ankas motorcyklar'
+                        },
+                        {
+                            id: 1,
+                            title: 'Framtidens motorcyklar', 
+                            date: '2001-04-20', 
+                            author: 'Iqrah Small', 
+                            category: 'Article', 
+                            content: 'Framtidens motorcyklar'
+                        },
+                        {
+                            id: 2,
+                            title: 'Denna nya motorn är grym', 
+                            date: '2002-01-10', 
+                            author: 'Mara Molloy', 
+                            category: 'News', 
+                            content: 'Denna nya motorn är grym'
+                        },
+                        {
+                            id: 3,
+                            title: 'Hur du börjar köra', 
+                            date: '2003-11-22', 
+                            author: 'Muhammed Alfaro', 
+                            category: 'Article', 
+                            content: 'Hur du börjar köra'
+                        },
+                        {
+                            id: 4,
+                            title: 'Top 10 motorcyklar detta året', 
+                            date: '2004-12-30', 
+                            author: 'Jethro Olsen', 
+                            category: 'News', 
+                            content: 'Top 10 motorcyklar detta året'
+                        },
+                        {
+                            id: 5,
+                            title: 'Hur du kör', 
+                            date: '2005-03-03', 
+                            author: 'Cain Keith', 
+                            category: 'Article', 
+                            content: 'Hur du kör'
+                        },
+                        {
+                            id: 6,
+                            title: 'Ny mega motorcykel gjord', 
+                            date: '2006-09-30', 
+                            author: 'Paul Dunne', 
+                            category: 'News', 
+                            content: 'Ny mega motorcykel gjord'
+                        },
+                        {
+                            id: 7,
+                            title: 'DU KOMMER ALDRIG TRO DENNA NYA MOTORCYKELN', 
+                            date: '2007-09-07', 
+                            author: 'Rhiana Ballard', 
+                            category: 'Article', 
+                            content: 'DU KOMMER ALDRIG TRO DENNA NYA MOTORCYKELN'
                         }
                     ]
                 },
