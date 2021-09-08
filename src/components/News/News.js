@@ -12,45 +12,57 @@ function News() {
     const [categoryFilter, setCategoryFilter] = useState('all');
     const [dateFilter, setDateFilter] = useState('newest');
 
-    // TODO: Behåll filter vid språkbyte
-    if (dateFilter === 'newest') {
-        filteredContent.sort(decending)
-    } else {
-        filteredContent.sort(acending)
-    };
 
     function handleCategoryChange (event) {
         setCategoryFilter(event.target.value)
-
-        if (event.target.value === 'news') {
-            let newArr = content.filter(element => element.category === 'News' || element.category === 'Nyhet');
-            setFilteredContent(newArr)
-        } else if (event.target.value === 'article') {
-            let newArr = content.filter(element => element.category === 'Article' || element.category === 'Artikel');
-            setFilteredContent(newArr)
-        } else {
-            setFilteredContent(content);
-        };
     };
 
     function handleDateChange (event) {
         setDateFilter(event.target.value)
     };
 
-    function acending (a, b) {
-        return Date.parse(a.date) - Date.parse(b.date);
-    };
+    function filterContentByCategory () {
+        // This will be the array in filteredContent
+        let newArr = null;
+        
+        // Filter content by category
+        if (categoryFilter === 'news') {
+            newArr = content.filter(element => element.category === 'News' || element.category === 'Nyhet');
 
-    function decending (a, b) {
-        return Date.parse(b.date) - Date.parse(a.date);
-    };
+        } else if (categoryFilter === 'article') {
+            newArr = content.filter(element => element.category === 'Article' || element.category === 'Artikel');
+
+            setFilteredContent(newArr)
+        } else {
+            newArr = Array.from(content)
+        };
+
+        // Filter content by publishing date
+        filterContentByTime(newArr);
+
+        // Updating filteredContent with the filtered and sorted array
+        setFilteredContent(newArr);
+    }
+
+    function filterContentByTime (data) {
+        // Filter content by publishing date
+        if (dateFilter === 'newest') {
+            data.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+        } else {
+            data.sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+        };
+    }
 
     useEffect(() => {
         let arr = t('news', { returnObjects: true })['content'];
 
         setContent(arr);
-        setFilteredContent(arr);
+        // filterContentByCategory();
     }, [i18n.language]);
+
+    useEffect(() => {
+        filterContentByCategory();
+    }, [content, categoryFilter, dateFilter])
 
     return (
         <section id={ Styles.newsWrapper }>
