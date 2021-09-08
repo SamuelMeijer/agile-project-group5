@@ -16,6 +16,9 @@ function Footer() {
                     <li><Link to ="/About" className={Styles.text}>
                         <Trans i18nKey= "footer.about"></Trans> 
                     </Link></li>
+                    <li><Link to ="/News" className={Styles.text}>
+                        <Trans i18nKey= "footer.news"></Trans> 
+                    </Link></li>
                     <li><Link to ="/faq" className={Styles.text}>
                         <Trans i18nKey= "footer.faq"></Trans> 
                     </Link></li>

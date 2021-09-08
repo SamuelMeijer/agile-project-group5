@@ -2,6 +2,9 @@ import Styles from './about.module.css';
 
 import gents from '../../resources/images/distinguished-gents-ride.jpg';
 import profile from '../../resources/images/profile.jpg';
+import profile2 from '../../resources/images/profile2.jpg';
+import profile3 from '../../resources/images/profile3.jpg';
+import profile4 from '../../resources/images/profile4.jpg';
 
 import { useTranslation, Trans } from 'react-i18next';
 
@@ -52,60 +55,56 @@ function About() {
                             <h3 className={Styles.h3}>Stefan Helikoptersson</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>VD</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role1"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example@email.com</p>
                         </div>
                     </div>
 
                     <div className={Styles.boxTwo}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile2} alt="Profile" />
                             </div>
                         <div className={Styles.cardName}>
                             <h3 className={Styles.h3}>Filip Hårdisksson</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Finansräv</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role2"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example2@email.com</p>
                         </div>
                     </div>
                         
 
                     <div className={Styles.boxThree}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile3} alt="Profile" />
                             </div>
                         <div className={Styles.cardName}>
                             <h3 className={Styles.h3}>Simon Simoff</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Kaffekurir</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role3"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example3@email.com</p>
                         </div>
                     </div>
 
                     <div className={Styles.boxFour}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile4} alt="Profile" />
                             </div>
                             <div className={Styles.cardName}>
                                 <h3 className={Styles.h3}>Samuel Från Fymden</h3>
                             </div>
                             <div className={Styles.cardInfo}>
-                                <p>Teknisktkunnig</p>
-                                <p>example@email.com</p>
-                            </div>
-                            <div className={Styles.cardLorem}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                                <p>
+                                    <Trans i18nKey= "about.role4"></Trans>
+                                </p>
+                                <p className={Styles.boxEmail}>example4@email.com</p>
                             </div>
                         </div>
                 </div>
@@ -113,49 +112,46 @@ function About() {
                 <div className={Styles.boxBottom}>
                     <div className={Styles.boxFive}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile4} alt="Profile" />
                             </div>
                         <div className={Styles.cardName}>
                             <h3 className={Styles.h3}>Sebastian Fantastian</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Motoringenjör</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role5"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example5@email.com</p>
                         </div>
                     </div>
 
                     <div className={Styles.boxSix}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile3} alt="Profile" />
                             </div>
                         <div className={Styles.cardName}>
                             <h3 className={Styles.h3}>Olle Fälktström</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Säljare</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role6"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example6@email.com</p>
                         </div>
                     </div>
 
                     <div className={Styles.boxSeven}>
                             <div className={Styles.cardImgContainer}>
-                                <img className={Styles.cardImg} src={profile} alt="Profile" />
+                                <img className={Styles.cardImg} src={profile2} alt="Profile" />
                             </div>
                         <div className={Styles.cardName}>
                             <h3 className={Styles.h3}>Dimitri Smiti</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Säljare</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role7"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example7@email.com</p>
                         </div>
                     </div>
                     
@@ -167,11 +163,10 @@ function About() {
                             <h3 className={Styles.h3}>Ronja Rövarsson</h3>
                         </div>
                         <div className={Styles.cardInfo}>
-                            <p>Söt</p>
-                            <p>example@email.com</p>
-                        </div>
-                        <div className={Styles.cardLorem}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nulla nascetur eu congue tincidunt euismod.</p>
+                            <p>
+                                <Trans i18nKey= "about.role8"></Trans>
+                            </p>
+                            <p className={Styles.boxEmail}>example8@email.com</p>
                         </div>
                     </div>
                 </div>

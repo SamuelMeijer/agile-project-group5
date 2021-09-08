@@ -42,7 +42,7 @@ function Contact() {
                 <p className={Styles.p}>
                     <Trans i18nKey= "contact.subject"></Trans> 
                 </p>
-                    <select>
+                    <select className={Styles.selectStyling}>
                         <option value="grapefruit">
                             {t('contact', { returnObjects: true })['question']}
                         </option>

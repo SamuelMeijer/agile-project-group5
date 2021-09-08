@@ -37,6 +37,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                 footer: {
                     pages: 'Pages',
                     about: 'About us',
+                    news: 'News',
                     faq: 'FAQ',
                     contact: 'Contact',
                     rights: '© 2021 Caferaider SWE, inc. All Rights Reserved'
@@ -46,6 +47,14 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     about: 'About Us',
                     desc: 'Motorcycles are our passion. Together we have more than 30 years experience from selling, servicing and riding motorcyckels. We offer the best motorcycles at the lowest prices and will always ne there for our customers.',
                     employees: 'Employees',
+                    role1: 'CEO',
+                    role2: 'CFO',
+                    role3: 'Coffee Courir',
+                    role4: 'CTO',
+                    role5: 'Technician',
+                    role6: 'Salesman',
+                    role7: 'Salesman',
+                    role8: 'Salesman',
                 },
                 news: {
                     title: 'News and articles',
@@ -190,6 +199,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                 footer: {
                     pages: 'Sidor',
                     about: 'Om oss',
+                    news: 'Nyheter',
                     faq: 'Vanliga frågor',
                     contact: 'Kontakt',
                     rights: '© 2021 Caferaider SWE, inc. Alla Rättigheter Förbehållna.'
@@ -198,7 +208,15 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
                     title: 'Födda till att köra',
                     about: 'Om Oss',
                     desc: 'Motorcyklar är våran passion. Tillsammans har vi mer än 30 års erfarenhet från försäljning, service och körande av motorcyklar. Vi erbjuder de bästa motorcycklarna till de lägsta priserna och kommer alltid att finnas där för våra kunder.',
-                    employees: 'Anställda'
+                    employees: 'Anställda',
+                    role1: 'VD',
+                    role2: 'Ekonomiansvarig',
+                    role3: 'Kaffekurir',
+                    role4: 'Teknisk chef',
+                    role5: 'Tekniker',
+                    role6: 'Säljare',
+                    role7: 'Säljare',
+                    role8: 'Säljare',
                 },
                 news: {
                     title: 'Nyheter och artiklar',

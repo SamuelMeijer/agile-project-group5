@@ -60,6 +60,7 @@
 }
 
 .gentsDiv {
+  padding-left: 30px;
 }
 
 .gentsImg {
@@ -98,13 +99,11 @@
 }
 
 .boxWrapper {
-  width: 1613px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 160px;
-  margin-right: 160px;
 }
 
 .boxTop {
@@ -125,68 +124,17 @@
   margin-bottom: 89px;
 }
 
-.boxOne {
+.boxOne, .boxTwo, .boxThree, .boxFour, .boxFive, .boxSix, .boxSeven, .boxEight {
   width: 277px;
-  height: 295px;
+  height: 200px;
   background-color: #ffffff;
   box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
   border-radius: 23px;
 }
 
-.boxTwo {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxThree {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxFour {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxFive {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxSix {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxSeven {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
-}
-
-.boxEight {
-  width: 277px;
-  height: 295px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 38px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 23px;
+.boxEmail{
+  padding-top: 5px;
+  cursor: pointer;
 }
 
 .cardImg {
