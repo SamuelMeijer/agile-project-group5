@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Index from './components/Index/Index';
 import About from './components/About/About';
-import Faq from './components/faq/Faq';
+import Faq from './components/Faq/Faq';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import News from './components/News/News';
