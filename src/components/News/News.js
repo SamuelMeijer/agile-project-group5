@@ -57,7 +57,6 @@ function News() {
         let arr = t('news', { returnObjects: true })['content'];
 
         setContent(arr);
-        // filterContentByCategory();
     }, [i18n.language]);
 
     useEffect(() => {
